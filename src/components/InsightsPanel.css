@@ -1,0 +1,72 @@
+.insights-panel {
+    background-color: var(--color-green);
+    border-radius: var(--border-radius-md);
+    padding: 24px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(72, 184, 113, 0.2);
+}
+
+.insights-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.insights-icon {
+    color: #fff;
+}
+
+.insights-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.insights-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.insight-card {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: var(--border-radius-sm);
+    padding: 16px;
+}
+
+.insight-label {
+    font-size: 12px;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.insight-value {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.insight-card.highlight {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background-color: white;
+    color: var(--text-primary);
+    margin-top: auto;
+}
+
+.highlight-icon {
+    color: var(--color-orange);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.insight-message {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+}

@@ -1,0 +1,77 @@
+.charts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.chart-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius-md);
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.chart-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chart-legend-custom {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot-income {
+    background-color: var(--color-green);
+}
+
+.dot-expense {
+    background-color: var(--color-orange);
+}
+
+.chart-period {
+    padding: 6px 12px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--border-color);
+    background-color: transparent;
+    font-family: inherit;
+    color: var(--text-primary);
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.chart-body {
+    flex: 1;
+}
+
+@media (max-width: 1024px) {
+    .chart-legend-custom {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
